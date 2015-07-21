@@ -2,13 +2,24 @@
 <html>
 <head>
 <link href="css/style.css" rel='stylesheet' type='text/css' />
+<script type="text/javascript">
+	$(function() {
+    $(window).on('resize', function resize()  {
+        $(window).off('resize', resize);
+        setTimeout(function () {
+            var content = $('#cofeedvideo');
+            var top = (window.innerHeight - content.height()) / 2;
+            content.css('top', Math.max(0, top) + 'px');
+            $(window).on('resize', resize);
+        }, 50);
+    }).resize();
+});
+</script>
 </head>
 
 <body>
-	<div id="cofeedbg">
-		<div id="cofeedvideo">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ER_r6FTZUUI" frameborder="0" allowfullscreen></iframe>
-		</div>
+	<div id="cofeedvideo">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ER_r6FTZUUI" frameborder="0" allowfullscreen></iframe>
 	</div>
 </body>
 </html>
