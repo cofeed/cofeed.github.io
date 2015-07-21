@@ -784,12 +784,26 @@ ul.social-list li a.tw{
 	}
 }
 
-#cofeed_video {
-    max-width: 1000px;
-    margin: auto;
-    left: 1%;
-    right: 1%;
+#cofeedvideo {
+    background:yellow;
+    width:200px;
+    padding:10px;
+    
+    /* This is the key to vertical centering */
+    margin:auto auto;
+    display: table; /* unless you want to declare a height */
     position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
 }
+#cofeedbg {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,.5);
+}
+
 
 /*-- Media Queries Ends Here --*/
