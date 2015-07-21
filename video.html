@@ -1,22 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<script>
-	$(function() {
-	    $(window).on('resize', function resize()  {
-	        $(window).off('resize', resize);
-	        setTimeout(function () {
-	            var content = $('#cofeed_video');
-	            var top = (window.innerHeight - content.height()) / 2;
-	            content.css('top', Math.max(0, top) + 'px');
-	            $(window).on('resize', resize);
-	        }, 50);
-	    }).resize();
-	});
-	</script>
-</head>
 <body>
-	<div style="max-width: 1000px;margin: auto;left: 1%;right: 1%;position: absolute;">
+	<div align="center">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/ER_r6FTZUUI" frameborder="0" allowfullscreen></iframe>
 	</div>
 </body>
