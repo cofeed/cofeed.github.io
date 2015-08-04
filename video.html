@@ -4,9 +4,12 @@
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 </head>
 
-<body bgcolor="#000000" id="bodyoverlay">
+<body bgcolor="#000000">
 	<div id="cofeedvideo">
-		<iframe width="960" height="540" src="https://www.youtube.com/embed/58rfVsWxfGs?autoplay=1" frameborder="0" allowfullscreen></iframe>
+		<div id="IframeWrapper" style="position: relative;">
+			<div id="iframeBlocker" style="position: absolute; top: 0; left: 0; width: 960px; height: 540px"></div>
+				<iframe width="960" height="540" src="https://www.youtube.com/embed/58rfVsWxfGs?autoplay=1" frameborder="0" allowfullscreen></iframe>
+		<div>
 	</div>
 </body>
 </html>
